@@ -1,0 +1,21 @@
+{
+  "name": "show-props",
+  "version": "1.0.0",
+  "description": "A React component that shows you the props that it recieves, useful for debugging",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.jsx -o index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-json-view": "^1.19.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
