@@ -1,6 +1,6 @@
 {
   "name": "show-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component that shows you the props that it recieves, useful for debugging",
   "main": "dist/index.js",
   "scripts": {
