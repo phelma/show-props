@@ -1,32 +1,12 @@
 import React from 'react'
-import ReactJson from 'react-json-view'
+import JSONTree from 'react-json-tree'
 
-const shouldCollapse = ({ namespace }) => 
-namespace.length > 2
+const shouldExpandNode = (keyName, data, level) => level < 1
 
 export default function ShowProps(props) {
   return (
     <div>
-      <style>
-        {`
-          .object-key-val {
-            position: relative;
-          }
-          .icon-container {
-            position: absolute;
-            left: -3px;
-          }
-        `}
-      </style>
-      <ReactJson
-        name="Props"
-        src={props}
-        collapseStringsAfterLength={20}
-        groupArraysAfterLength={5}
-        shouldCollapse={shouldCollapse}
-        indentWidth={2}
-      />
+      <JSONTree data={props} invertTheme shouldExpandNode={shouldExpandNode} />
     </div>
   )
 }
-
