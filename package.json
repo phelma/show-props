@@ -1,11 +1,12 @@
 {
   "name": "show-props",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A React component that shows you the props that it recieves, useful for debugging",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel index.jsx -o index.js"
+    "build": "babel index.jsx -o index.js",
+    "publish": "npm run build && npm publish"
   },
   "keywords": [
     "react",
